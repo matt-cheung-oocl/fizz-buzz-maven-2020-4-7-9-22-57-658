@@ -9,8 +9,13 @@ public class FizzBuzzTest {
 	public void should_return_normal_num() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 
-		fizzBuzz.say(1);
-
 		assertEquals("1", fizzBuzz.say(1));
+	}
+
+	@Test
+	public void should_return_Fizz() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+
+		assertEquals("Fizz", fizzBuzz.say(3));
 	}
 }
