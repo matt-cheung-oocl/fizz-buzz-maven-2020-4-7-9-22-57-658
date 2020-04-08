@@ -13,4 +13,10 @@ public class FizzBuzz {
 			return "Buzz";
 		return String.valueOf(number);
 	}
+
+	public void startGame(int numberOfStudent) {
+		for (int count = 1; count <= numberOfStudent; count++) {
+			System.out.println(say(count));
+		}
+	}
 }

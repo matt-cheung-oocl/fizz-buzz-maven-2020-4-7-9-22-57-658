@@ -1,6 +1,7 @@
 package com.oocl;
 
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
@@ -27,5 +28,12 @@ public class FizzBuzzTest {
 	public void should_return_FizzBuzz() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		assertEquals("Buzz", fizzBuzz.say(10));
+	}
+
+	@Test
+	public void simulate_game_FizzBuzz() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+
+		fizzBuzz.startGame(20);
 	}
 }
